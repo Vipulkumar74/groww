@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: space-around;
+        }
+        .navbar{
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-around;   
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar a {
+            margin-left: 20px; 
+            text-decoration: none;
+            color: rgb(81, 78, 78);
+            font-size: 30px;
+            margin-top: .99%;
+        }
+        input{
+            margin-top: .7%;
+        }
+        #lg_img{
+            height: 30%;
+            margin-top: 1%;
+        }
+        #not_img{
+            height: 5%;
+        }
+        input{
+            height: 30px;
+            width: 15%;
+            border-radius: 5px;
+        }
+        .not{
+            margin-top: 0.5%;
+        }
+        .cateogry{
+            margin-top: 2%;
+            margin-left: 15%;
+            border-bottom: 2px solid rgb(208, 202, 202);
+            display: flex;
+        }
+        .index{
+            display: flex;
+            margin-left: 14%;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+        .nifty{
+            border: 1px solid rgb(181, 176, 176);
+            width: 220px;
+            padding: 10px 12px;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px ;
+            margin: 10px;
+        }
+        .head{
+            display: flex;
+            justify-content: space-around;
+        }
+        .return{
+            border: 2px solid black;
+        }
+        .rupee{
+            display: flex;
+            justify-content: space-between;
+        }
+        table{
+            margin: 10px 15px 25px 5px;
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+        }
+        .main1{
+            margin-right: 220px;
+        }
+        .m_share{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 80px;
+        }
+        .share {
+            border: 2px solid rgb(158, 152, 152);
+            width: 180px;
+            padding: 10px 12px;
+            position: relative;
+            align-items: center;
+            border-radius: 6px;
+            margin-left: 10px; 
+        }
+        .mostbought{
+            display: flex;
+        }
+        
+        .coll_main{
+            display: flex;
+            justify-content: space-around;
+        }
+        .collection{
+            display: flex;
+            margin-left: 14%;
+        }
+        .coll{
+            display: flex;
+            width: 120px;
+            height: 110px;
+            padding-left: 15px;
+            border-radius: 8px;
+        }
+        .heading{
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            background-color: aliceblue;
+        }
+        .logo_link{
+            display: flex;
+        }
+        .footer_grow{
+            display: flex;
+        }
+
+        #imagee{
+            height: 50px;
+            border: 2px solid rgb(204, 196, 196);
+            border-radius: 10px;
+        }
+
+        .div1{
+            border-top: 1px solid rgb(174, 165, 165);
+            
+            
+
+        }
+        .div1 p{
+            color: rgb(134, 125, 125);
+        }
+        .div1 h2{
+            color: rgb(69, 67, 67);
+        }
+
+        .div2{
+            color: rgb(8, 159, 8); 
+           border-top: 1px solid rgb(174, 165, 165);
+           border-bottom: 1px solid rgb(174, 165, 165);
+           
+        }
+
+
+/* notification */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .notification-icon:hover + .dropdown,
+  .dropdown:hover {
+    display: block;
+  }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="img_container">
+            <img id="lg_img" src="th.jpeg" alt="#">
+            <a style="font-size: 40px; margin-left: 0%; margin-top: .5%;" href="#">Groww</a>
+        </div>
+        <a href="#">Explore</a>
+        <a style="color: rgb(31, 142, 98);" href="#">Investments</a>
+        <input type="text" placeholder="What are you looking for today?">
+        
+
+
+
+
+            
+               
+                <div class="notification-icon" onmouseover="toggleDropdown()"><div class="not">
+                    <img id="not_img" src="not.jpeg" alt="#" height="50px" width="50px"></div>
+                
+               
+                <div class="dropdown" id="notificationDropdown">
+                 
+                 <div class="div1">
+                    <h2>HDFC is in News</h2>
+                    <p>HDFC Bank hikes Home Loan Interest</p>
+                    <p>rates by 10-15 bps to 9.8% </p>
+                 </div>
+                 <div class="div1">
+                    <h2>MF Weekly Portfolio </h2>
+                    <p>Total Invested value: ₹400</p>
+                    <p>Total Returns:   ₹ -12 | -3.24%</p>
+                 </div>
+                 <div class="div1">
+                    <h2>PNB is in News</h2>
+                    <p>PNB spurts 1.45% </p>
+                    <p>rises for the 3rd session.</p>
+                 </div>
+                 <div class="div2">
+                <center> <h2  >VIEW ALL</h2> </center>
+                </div>
+                </div>
+              </div>
+              
+              
+
+
+
+
+
+            <a style="margin-right: 10px;" href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="cateogry">
+        <a href="index.html">  <h1 style="color:rgb(86, 83, 83);" >Stocks</h1> </a>
+        <a href=""> <h1 style="padding-left:15px; color:rgb(86, 83, 83)">Mutual Funds</h1> </a>
+    </div>
+    <div class="head">
+        <h1 style="margin-left: 50px; color:rgb(86, 83, 83)"  >Popular Funds</h1>
+        <h1 style="margin-right:-145px; color:rgb(86, 83, 83)">Your Investments</h1>
+    </div>
+    <div class="index">
+
+        <div class="main">
+         <div class="nifty">
+            <img id="imagee" src="mut_img/parag.webp" alt="">
+         <p>Parag Parikh Flexi</p> 
+         <p>Cap Fund Direct...</p>
+         <p>23.4% <span style="color: rgb(167, 162, 162);" >(3Y)</span> </p>  </p>
+          </div>
+ 
+          <div class="nifty">
+
+            <img id="imagee" src="mut_img/nippon.png" alt="">
+            <p>Nippon India Large</p> 
+            <p>Cap Fund Direct...</p>
+            <p>25.6% <span style="color: rgb(167, 162, 162);" >(3Y)</span> </p>  </p>
+         </div>
+ 
+ 
+         <div class="nifty">
+            <img id="imagee" src="mut_img/quant.webp" alt="">
+            <p>Quant Mid Cap</p> 
+            <p>Fund Direct Growth</p>
+            <p>37.9% <span style="color: rgb(167, 162, 162);" >(3Y)</span> </p>        </div>
+
+         <div class="nifty">
+            <img id="imagee" src="mut_img/xis.webp" alt="">
+            <p>Axis Small Cap</p> 
+            <p>Fund Direct Growth</p>
+            <p>27.0% <span style="color: rgb(167, 162, 162);" >(3Y)</span> </p>         </div>
+ </div>
+ 
+ <div class="main1">
+         <div class="nifty">
+             <div class="rupee"></div>
+             <table>
+                 <tr>
+                   <td>Return</td>
+                  <td style="padding-left: 45px;">Investment</td>
+                   
+                 </tr>
+                 <tr>
+                   <td style="color: rgb(203, 26, 26);" >- ₹13</td> 
+                   <td style="padding-left: 50px;">₹387</td>
+                 </tr>
+               </table>
+               </div>
+         </div>
+         </div>
+ 
+ 
+ 
+ 
+ 
+     </div>
+    <h1 style="margin-left: 14%; color:rgb(86, 83, 83)" >Collections</h1>
+    <div class="main_coll">
+        <div class="collection">
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/high.svg" alt="">
+                    <p>High Returns</p>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/sip.svg" alt="">
+                    <p>SIP with ₹500</p>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/ax.svg" alt="">
+                    <p>Tax Saving</p>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/arge.svg" alt="">
+                    <p>Large Cap</p>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/mid.svg" alt="">
+                    <p>Mid Cap</p>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="image">
+                    <img src="coll/small.svg" alt="">
+                    <p>Small Cap</p>
+                </div>
+            </div>
+        </div>
+        <div class="div10"></div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="groww">
+            <div class="footer_grow">
+                <img src="th.jpeg" alt="">
+                <h1>Groww</h1>
+            </div>
+            <p>Vaishnavi Tech Park, 3rd & 4th Floor</p>
+            <p>Sarjapur Main Road, India</p>
+            <p>Bihar - 841427</p>
+            <a href="">Contact Us</a>
+            <div class="logo_link">
+                <a href="">   <img src="f_img.svg" alt="">
+                 <a style="margin-left: 5px;" href="">   <img src="t_img.svg" alt="">
+                 <a style="margin-left: 5px;" href="">  <img src="y_img.svg" alt="">
+                 <a style="margin-left: 5px;" href=""> <img src="i_img.svg" alt="">
+                <a style="margin-left: 5px;" href="">   <img src="link.svg" alt="">
+                <a style="margin-left: 5px;" href="">    <img src="tel_img.svg" alt="">
+            </div>
+        </div>
+        <div style="margin-left: -300px;" class="products">
+            <h1>Products</h1>
+            <a href=""> <p>Stocks</p> </a>
+            <a href="">  <p>Future & Options</p> </a>
+            <a href="">  <p>IPO</p> </a>
+            <a href="">   <p>Mutual Funds</p> </a>
+        </div>
+        <div class="Groww2">
+            <h1>GROWW</h1>
+            <a href="">  <p>About Us</p> </a>
+            <a href="">  <p>pricing</p>  </a>
+            <a href="">  <p>Blog</p> </a>
+            <a href="">  <p>Media & Press</p> </a>
+            <a href="">  <p>Careers</p> </a>
+            <a href=""> <p>Help and Support</p> </a>
+            <a href=""> <p>Sitemap</p>  </a>
+            <a href=""> <p>Trust and Safety</p> </a>
+        </div>
+        <div class="Links">
+            <h1>LINKS</h1>
+            <a href="">   <p>AMC Mutual Funds</p> </a>
+            <a href="">   <p>Calculators</p> </a>
+            <a href="">   <p>Glossary</p> </a>
+            <a href="">   <p>Open Demat Account</p> </a>
+            <a href="">  <p>Groww Digest</p> </a>
+            <a href="">  <p>Sitemap</p> </a>
+            <a href="">  <p>Income Tax Calculator</p> </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("notificationDropdown");
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html>
