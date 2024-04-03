@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: space-around;
+        }
+        .navbar{
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-around;   
+            align-items: center;
+           
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar a {
+            margin-left: 20px; 
+            text-decoration: none;
+            color: rgb(81, 78, 78);
+            font-size: 30px;
+            margin-top: .99%;
+        }
+
+        input{
+            margin-top: .7%;
+        }
+        #lg_img{
+           height: 30%;
+           margin-top: 1%;
+        }
+        
+        #not_img{
+            height: 5%;
+        }
+        
+        input{
+            height: 30px;
+            width: 15%;
+            border-radius: 5px;
+        }
+        .not{
+            margin-top: 0.5%;
+        }
+        .cateogry{
+            margin-top: 2%;
+            margin-left: 15%;
+            border-bottom: 2px solid rgb(208, 202, 202);
+            display: flex;
+            
+            
+        }
+        .index{
+            display: flex;
+            margin-left: 14%;
+            justify-content: space-between;
+            font-size: 20px;
+           
+        }
+        .nifty{
+            border: 2px solid rgb(158, 152, 152);
+            width: 220px;
+            padding: 10px 12px;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 6px ;
+            margin: 10px;
+        }
+        .head{
+            display: flex;
+            justify-content: space-around;
+        }
+        .return{
+            border: 2px solid black;
+        }
+        .rupee{
+            display: flex;
+            justify-content: space-between;
+        }
+       table{
+        margin: 10px 15px 25px 5px;
+       }
+
+       .main{
+        display: flex;
+        justify-content: space-around;
+       
+       }
+       .main1{
+      margin-right: 300px;
+       
+       }
+      
+
+       .m_share{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 80px;
+        
+       }
+
+
+       .share {
+        border: 2px solid rgb(158, 152, 152);
+        width: 180px;
+        padding: 10px 12px;
+        position: relative;
+        align-items: center;
+        border-radius: 6px;
+        margin-left: 10px; /* Adjusted margin to reduce space */
+    }
+    
+       .mostbought{
+        display: flex;
+        
+        
+       }
+
+
+       .watchlist{
+        
+        margin-left: -100px;
+        display: flex;
+       }
+
+       .heading{
+        display: flex;
+        justify-content: space-around;
+       }
+       .footer{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        background-color: aliceblue;
+       }
+
+       .logo_link{
+        display: flex;
+        
+       }
+       .footer_grow{
+        display: flex;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="img_container">
+        <img id="lg_img" src="th.jpeg" alt="#">
+        <a style="font-size: 40px;
+        margin-left: 0%;
+        margin-top: .5%;" href="#">Groww</a>
+    </div>
+        <a href="#">Explore</a>
+        <a style="color: rgb(31, 142, 98);" href="#">Investments</a>
+        <input type="text" placeholder="What are you looking for today?">
+        <div class="not">
+        <img id="not_img" src="not.jpeg" alt="#" height="40px" width="50px">
+        <a href="login.html">Login</a>
+    </div>
+        
+        
+
+    </div>
+    <div class="cateogry">
+      <a href="">  <h1  >Stocks</h1> </a>
+       <a href="mutual.html"> <h1 style="padding-left:15px">Mutual Funds</h1> </a>
+    </div>
+
+    <div class="head">
+    <h1  >Index</h1>
+    <h1 style="margin-left:300px">Your Investments</h1>
+    </div>
+
+    
+    
+    <div class="index">
+
+       <div class="main">
+        <div class="nifty">
+        <p>NIFTY 50</p> 
+        <p>22,326.90 <span style="color: rgb(11, 205, 11);">203.25 (0.92%)</span> </p>
+         </div>
+
+         <div class="nifty">
+        <p>SENSEX</p> 
+        <p>73,651.35 <span style="color: rgb(11, 205, 11)">655.04 (0.90%)</span> </p>
+        </div>
+
+
+        <div class="nifty">
+        <p>BANK NIFTY</p> 
+        <p>47,124.60 <span style="color: rgb(11, 205, 11);">338.65 (0.72%)</span> </p>
+        </div>
+</div>
+
+<div class="main1">
+        <div class="nifty">
+            <div class="rupee"></div>
+            <table>
+                <tr>
+                  <td>Return</td>
+                 <td style="padding-left: 45px;">Investment</td>
+                  
+                </tr>
+                <tr>
+                  <td style="color: rgb(11, 205, 11);" >+ ₹500</td> 
+                  <td style="padding-left: 50px;">₹18,077</td>
+                </tr>
+              </table>
+              </div>
+        </div>
+        </div>
+
+
+
+
+
+    </div>
+    <br>
+    <div class="heading">
+    <h1 style="margin-left: 320px;">Most Bought on Groww</h1>
+    <h1>Watchlist</h1>
+
+    </div>
+
+    <div class="m_share">
+        <div class="mostbought">
+        <div class="share">
+            <img height="60px" src="irfc.png" alt="">
+        <p style="margin-top: -10px;">IRFC</p> 
+        <br> 
+        <p style="margin-top: 25px;">₹142.35  </p>
+        <P style="color: red;">-0.50 (0.35%)</P>
+         </div>
+
+         <div class="share">
+            <img height="50px" style="margin-top: 10px;" src="nhpc.png" alt="">
+            <p style="margin-top: 10px;">NHPC</p> 
+            <br>  
+            <p style="margin-top: 0px;">₹89.70  </p>
+            <P style="color: rgb(11, 205, 11)">0.90 (0.96%)</P>        </div>
+
+
+        <div class="share">
+            <img height="60px" src="rel.png" alt="">
+            <p style="margin-top: -5px;">RELIANCE POWER</p> 
+            <br> 
+            <p  >₹28.25  </p>
+            <P style="color: rgb(11, 205, 11);">0.60 (2.17%)</P>        </div>
+
+        <div class="share">
+            <img height="70px" style="margin-top: -10.5px;" src="yes.png" alt="">
+            <p style="margin-top: 10px;">YES BANK</p> 
+            <br> 
+            <p style="margin-top: 3px;">₹23.20 </p>
+            <P style="color: rgb(11, 205, 11)">0.05 (0.22%)</P>        </div>
+
+    </div>
+
+    <!-- watchlist  -->
+    
+    <div class="watch_list">
+
+    <div class="share">
+        <p>BANK NIFTY</p> 
+        <p>47,124.60 <span style="color: rgb(11, 205, 11)">338.65 (0.72%)</span> </p>
+        </div>
+
+    </div>
+       
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="groww">
+            <div class="footer_grow">
+            <img src="th.jpeg" alt="">
+            <h1>Groww</h1>
+            </div>
+            <p>Vaishnavi Tech Park, 3rd & 4th Floor</p>
+            <p>Sarjapur Main Road, India</p>
+            <p>Bihar - 841427</p>
+            <a href="">Contact Us</a>
+
+            <div class="logo_link">
+                <a href="">   <img src="f_img.svg" alt="">
+                 <a style="margin-left: 5px;" href="">   <img src="t_img.svg" alt="">
+                 <a style="margin-left: 5px;" href="">  <img src="y_img.svg" alt="">
+                 <a style="margin-left: 5px;" href=""> <img src="i_img.svg" alt="">
+                <a style="margin-left: 5px;" href="">   <img src="link.svg" alt="">
+                <a style="margin-left: 5px;" href="">    <img src="tel_img.svg" alt="">
+                
+            </div>
+        </div>
+        <div style="margin-left: -300px;" class="products">
+            <h1>Products</h1>
+
+           <a href=""> <p>Stocks</p> </a>
+           <a href="">  <p>Future & Options</p> </a>
+           <a href="">  <p>IPO</p> </a>
+           <a href="">   <p>Mutual Funds</p> </a>
+        </div>
+        <div class="Groww2">
+            <h1>GROWW</h1>
+
+          <a href="">  <p>About Us</p> </a>
+          <a href="">  <p>pricing</p>  </a>
+          <a href="">  <p>Blog</p> </a>
+          <a href="">  <p>Media & Press</p> </a>
+          <a href="">  <p>Careers</p> </a>
+          <a href=""> <p>Help and Support</p> </a>
+          <a href=""> <p>Sitemap</p>  </a>
+          <a href=""> <p>Trust and Safety</p> </a>
+        </div>
+        <div class="Links">
+            <h1>LINKS</h1>
+
+            <a href="">   <p>AMC Mutual Funds</p> </a>
+            <a href="">   <p>Calculators</p> </a>
+            <a href="">   <p>Glossary</p> </a>
+            <a href="">   <p>Open Demat Account</p> </a>
+            <a href="">  <p>Groww Digest</p> </a>
+            <a href="">  <p>Sitemap</p> </a>
+            <a href="">  <p>Income Tax Calculator</p> </a>
+        </div>
+    </div>
+    
+</body>
+</html>
